@@ -12,6 +12,7 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
+Version: 1.0.0 
 
 NOTE: This is a toy package created for expository purposes. It is not meant to actually be useful. 
 
@@ -44,4 +45,24 @@ The conversion from DNA to RNA is basically replacing the T base to a U base. We
 ```{r}
 dna <- "ACTTTAAGC"
 transcription(dna)
+```
+
+Another important process is the conversion from RNA to Amino acid. A codon is a 3-mers in a RNA string. Each codon will be converted into an amino code. The conversion table is shown below: 
+
+```{r, echo = FALSE, results = "asis"}
+library(knitr)
+kable(codon_table)
+```
+
+For example, the RNA string AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA will be converted into MAMAPRTEINSTRING using 
+
+```{r}
+rna <- "AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA"
+translation(rna)
+```
+
+Note that if the codon maps to Stop, this mean the translation process terminates immediately. For example, 
+
+```{r}
+translation("AUGUGAAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA")
 ```
