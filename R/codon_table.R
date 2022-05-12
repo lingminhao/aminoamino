@@ -3,10 +3,9 @@
 #' A dataset containing the maps between codon and its respective amino acid
 #' representation.
 #'
-#' @format A data frame with 64 rows and 2 variables:
+#' @format A data frame with 64 rows and 1 variables:
 #' \describe{
-#'   \item{codon}{codon, in 3-mers}
-#'   \item{amino}{amino acid code, in 1-mer}
+#'   \item{amino}{amino acid code converted from codon 3-mers}
 #'   ...
 #' }
 #' @source \url{https://github.com/lingminhao/Project-Rosalind/blob/main/Bioinformatics%20Textbook%20Track/Chapter%204/CodonTable.txt}

@@ -5,10 +5,9 @@
 \alias{codon_table}
 \title{Codon table.}
 \format{
-A data frame with 64 rows and 2 variables:
+A data frame with 64 rows and 1 variables:
 \describe{
-\item{codon}{codon, in 3-mers}
-\item{amino}{amino acid code, in 1-mer}
+\item{amino}{amino acid code converted from codon 3-mers}
 ...
 }
 }
