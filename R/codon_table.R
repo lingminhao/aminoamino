@@ -3,7 +3,7 @@
 #' A dataset containing the maps between codon and its respective amino acid
 #' representation.
 #'
-#' @format A data frame with 64 rows and 1 variables:
+#' @format A data frame with 64 rows and 1 variable:
 #' \describe{
 #'   \item{amino}{amino acid code converted from codon 3-mers}
 #'   ...
