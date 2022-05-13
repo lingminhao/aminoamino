@@ -8,15 +8,16 @@
 #' @examples
 #' rna <- "AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA"
 #' translation(rna)
+
 translation <- function(rna){
-  amino <- ""
-  for(i in seq(1, nchar(rna), by = 3)){
-    if (codon_table[substr(rna,i,i+2),] == "Stop"){
+  rna_split <- substring(rna, seq(1, nchar(rna),3), seq(3, nchar(rna),3))
+  for (i in seq(length(rna_split))){
+    if (codon_table[rna_split[i],] == "Stop"){
+      rna_split <- rna_split[1:i-1]
       break
     }
-    else{
-      amino <- paste0(amino,codon_table[substr(rna,i,i+2),])
-    }
   }
-  return(amino)
+  amino_string <- paste(sapply(rna_split,function(codon){codon_table[codon,1]}),
+                        collapse = "")
+  return(amino_string)
 }
