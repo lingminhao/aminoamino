@@ -9,14 +9,14 @@
 #' dna <- "GATGGAACTTGACTACGTAAATT"
 #' transcription(dna)
 transcription <- function(dna){
-  rna <- ""
-  for (chr in strsplit(dna,"")[[1]]){
-    if (chr == "T"){
-      rna <- paste0(rna, "U")
+  nucleotide_change <- function(base){
+    if (base == "T"){
+      return("U")
     }
     else{
-      rna <- paste0(rna, chr)
+      return(base)
     }
   }
+  rna <- paste(lapply(strsplit(dna,"")[[1]], nucleotide_change), collapse = "")
   return(rna)
 }
