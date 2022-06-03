@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 ```
 Version: 1.0.0 
 
-NOTE: This is a toy package created for expository purposes. It is not meant to actually be useful. 
+NOTE: This is a toy toy package created for expository purposes. It is not meant to actually be useful. 
 
 # aminoamino
 
@@ -51,7 +51,7 @@ Another important process is the conversion from RNA to Amino acid. A codon is a
 
 ```{r, echo = FALSE, results = "asis"}
 library(knitr)
-kable(codon_table)
+kable(system.file("extdata", "codon_table.txt", package = "aminoamino"))
 ```
 
 For example, the RNA string AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA will be converted into MAMAPRTEINSTRING using 

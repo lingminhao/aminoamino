@@ -3,8 +3,8 @@
 
 Version: 1.0.0
 
-NOTE: This is a toy package created for expository purposes. It is not
-meant to actually be useful.
+NOTE: This is a toy toy package created for expository purposes. It is
+not meant to actually be useful.
 
 # aminoamino
 
@@ -49,72 +49,9 @@ Another important process is the conversion from RNA to Amino acid. A
 codon is a 3-mers in a RNA string. Each codon will be converted into an
 amino code. The conversion table is shown below:
 
-|     | amino |
-|:----|:------|
-| UUU | F     |
-| CUU | L     |
-| AUU | I     |
-| GUU | V     |
-| UUC | F     |
-| CUC | L     |
-| AUC | I     |
-| GUC | V     |
-| UUA | L     |
-| CUA | L     |
-| AUA | I     |
-| GUA | V     |
-| UUG | L     |
-| CUG | L     |
-| AUG | M     |
-| GUG | V     |
-| UCU | S     |
-| CCU | P     |
-| ACU | T     |
-| GCU | A     |
-| UCC | S     |
-| CCC | P     |
-| ACC | T     |
-| GCC | A     |
-| UCA | S     |
-| CCA | P     |
-| ACA | T     |
-| GCA | A     |
-| UCG | S     |
-| CCG | P     |
-| ACG | T     |
-| GCG | A     |
-| UAU | Y     |
-| CAU | H     |
-| AAU | N     |
-| GAU | D     |
-| UAC | Y     |
-| CAC | H     |
-| AAC | N     |
-| GAC | D     |
-| UAA | Stop  |
-| CAA | Q     |
-| AAA | K     |
-| GAA | E     |
-| UAG | Stop  |
-| CAG | Q     |
-| AAG | K     |
-| GAG | E     |
-| UGU | C     |
-| CGU | R     |
-| AGU | S     |
-| GGU | G     |
-| UGC | C     |
-| CGC | R     |
-| AGC | S     |
-| GGC | G     |
-| UGA | Stop  |
-| CGA | R     |
-| AGA | R     |
-| GGA | G     |
-| UGG | W     |
-| CGG | R     |
-| AGG | R     |
-| GGG | G     |
+| x                                                                                                         |
+|:----------------------------------------------------------------------------------------------------------|
+| C:/Users/lingmh/AppData/Local/Temp/RtmpqwrWW8/temp_libpath39284fb42240/aminoamino/extdata/codon_table.txt |
 
 For example, the RNA string
 AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA will be converted
