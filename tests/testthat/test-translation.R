@@ -4,4 +4,5 @@ test_that("translation() converts RNA to Amino acid", {
 
 test_that("translation() terminates immediately for stop codon", {
   expect_equal(translation("AUGUGAAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA"), "M")
+  expect_equal(translation("UGA"), "")
 })
